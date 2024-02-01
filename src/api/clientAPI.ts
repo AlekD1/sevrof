@@ -1,7 +1,7 @@
 import ky from "ky";
-import {ContactInfoInterface} from "@/interfases/interfaces";
+import { ContactInfoInterface } from "@/interfases/interfaces";
 
-export const clientAPI =   ky.extend({prefixUrl: 'http://127.0.0.1:8000/api/'});
+export const clientAPI = ky.extend({ prefixUrl: 'https://sevros.vercel.app/api/' });
 
 export async function getContacts(): Promise<ContactInfoInterface | undefined> {
     try {
